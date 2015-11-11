@@ -1,0 +1,34 @@
+/// Custom variables to overwritte default Foundation variables
+
+// b. Grid
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+//$row-width: 1200px;
+
+
+
+
+// c. Global
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+/// Typo
+$font-family-sans-serif:    "Open Sans", Helvetica, Roboto, Arial, sans-serif;
+
+/// Colors
+$primary-color:             hsl(341.2,84.1%,50.8%);
+$secondary-color:           hsl(215.2,25.3%,35.7%);
+$tertiary-color:            hsl(182.3,61.7%,41%);
+$light-grey:                #EDEDED !default;
+$mid-grey:                  #999 !default;
+$dark-grey:                 #444 !default;
+
+
+
+/// 
+// Custom variables
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$border-light:              solid 1px $light-grey;
+
+$input-include-glowing-effect: true;
+$input-error-message-padding: 4px;
