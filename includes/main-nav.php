@@ -14,6 +14,9 @@
     <li class="<?php navClass('gallery'); ?>">
         <a href="<?php echo $ROOT; ?>/gallery">Gallery</a>
     </li>
+    <li class="<?php navClass('testimonials'); ?>">
+        <a href="<?php echo $ROOT; ?>/testimonials">Testimonials</a>
+    </li>
     <li class="<?php navClass('contact'); ?>">
         <a href="#contact">Contact</a>
     </li>
