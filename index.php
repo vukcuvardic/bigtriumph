@@ -130,7 +130,7 @@ include('includes/header.php');
             <h3>We are Trendy!</h3>
         </div>
         <div data-equalizer-watch>
-            <h3>We are Determine!</h3>
+            <h3>We are Determined!</h3>
         </div>
         <div data-equalizer-watch>
             <h3>We are Experienced!</h3>

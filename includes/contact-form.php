@@ -1,18 +1,26 @@
 <?php
-
 $name = $_POST["name"];
 $email = $_POST["email"];
 $phone = $_POST["phone"];
 $area = $_POST["area"];
 $time = $_POST["time"];
 $kidsNumber = $_POST["kidsNumber"];
-$kidsAge = $_POST["kidsAge"];
+$kid1Age = $_POST["kid1Age"];
+$kid2Age = $_POST["kid2Age"];
+$kid3Age = $_POST["kid3Age"];
+$kid4Age = $_POST["kid4Age"];
+$kid5Age = $_POST["kid5Age"];
+$kid6Age = $_POST["kid6Age"];
+$kid7Age = $_POST["kid7Age"];
+$kid8Age = $_POST["kid8Age"];
+$kid9Age = $_POST["kid9Age"];
 $customerSource = $_POST["customerSource"];
+$customerSourceOther = $_POST["customerSourceOther"];
 $category = $_POST["category"];
 $text = $_POST["message"];
+$captcha = $_POST["gRecaptchaResponse"];
 
-if (isset($_POST['g-recaptcha-response'])) {
-    $captcha = $_POST['g-recaptcha-response'];
+if (isset($captcha)) {
     $privatekey = "6Le0RxATAAAAANKTdmJhjzW0dZ088JPvfrv-EsPW";
     $url = 'https://www.google.com/recaptcha/api/siteverify';
     $data = array(
@@ -33,36 +41,52 @@ if (isset($_POST['g-recaptcha-response'])) {
     $response = curl_exec($ch);
     curl_close($ch);
 }
-
-$jsonResponse = json_decode($response);
-
-if ($jsonResponse->success == "true")
-    $captcha_message = "true";
-else
-    $captcha_message = "false";
-
 $msg = "
 Name: $name
 Email: $email
+   
 Phone: $phone
-    
 Area: $area
 Time: $time
 
-Captcha: $captcha_message
-    
 Category: $category
-Number of Kids: $kidsNumber
-Kids Age: $kidsAge
-    
-Heared of us from: $customerSource
-    
+" 
+.
+
+(!empty($kidsNumber) && ($kidsNumber != "null") ? "Number of Kids: $kidsNumber" : "") . "\n"
+.   
+(!empty($kidsNumber) && ($kidsNumber != "null") ? ("Kids Age: " .
+        (!empty($kid1Age) && ($kid1Age != "undefined") ? $kid1Age . ", " : "") .
+        (!empty($kid2Age) && ($kid2Age != "undefined") ? $kid2Age . ", " : "") .
+        (!empty($kid3Age) && ($kid3Age != "undefined") ? $kid3Age . ", " : "") .
+        (!empty($kid4Age) && ($kid4Age != "undefined") ? $kid4Age . ", " : "") .
+        (!empty($kid5Age) && ($kid5Age != "undefined") ? $kid5Age . ", " : "") .
+        (!empty($kid6Age) && ($kid6Age != "undefined") ? $kid6Age . ", " : "") .
+        (!empty($kid7Age) && ($kid7Age != "undefined") ? $kid7Age . ", " : "") .
+        (!empty($kid8Age) && ($kid8Age != "undefined") ? $kid8Age . ", " : "") .
+        (!empty($kid9Age) && ($kid9Age != "undefined") ? $kid9Age : "")) : "") . "\n"
+.
+"
+Heard of us from: $customerSource
+"
+.
+(!empty($customerSourceOther) ? "Source: $customerSourceOther" : "") . "\n"
+.
+"
 Comments: $text
 ";
 
-$to = "vukcuvardic@gmail.com";
+$to = "info@bigtriumph.com";
 $subject = "Website Contact Form";
 $header = "Website Contact Form";
 
-mail ($to,$subject,$msg,$header);
+$jsonResponse = json_decode($response);
+
+if ($jsonResponse->{'success'} === true) 
+{
+    mail ($to,$subject,$msg,$header);
+    echo "true";
+}
+else
+    $captcha_message = "false";
 ?>

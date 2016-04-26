@@ -43,6 +43,7 @@ function navClass($item) {
     </head>
 
     <body>
+        <?php include_once('analyticstracking.php'); ?>
         <header>
             <div class="top-bar_container">
                 <div class="row">

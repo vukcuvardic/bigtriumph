@@ -48,8 +48,8 @@ include('../includes/header.php');
                     <ul>
                         <li>But first… <strong>KITCHEN REALITY CHECK.</strong></li>
                         <li>Creating a “food library” is everything you need for your new start.</li>
-                        <li>I found some food in your kitchen you don’t really need, do you?</li>
-                        <li>After ‘kitchen clean up’ , join me shopping if you like to.</li>
+                        <li>I found some food in your kitchen you don’t really need.</li>
+                        <li>After ‘kitchen clean up’, join me shopping.</li>
                     </ul>
                 </div>
             </div>
@@ -94,7 +94,7 @@ include('../includes/header.php');
                     <h2 class="what-we-do_section-title">Meal Plan and Recipes</h2>
                     <ul>
                         <li>Understanding your current habits and accepting changes that will protect you for a lifetime.</li>
-                        <li>Irresistible meals and how to cook them. We have it all!</li>
+                        <li>Irresistible meals and how to prepare them. We have it all!</li>
                         <li>Enjoy and wait for a new version, better version of YOU.</li>
                         <li>Special focus on <strong>HAPPY LUNCH BOX</strong>, well balanced meals and snacks for your little ones.</li>
                     </ul>
@@ -116,9 +116,9 @@ include('../includes/header.php');
                 <div class="what-we-do_text-container">
                     <h2 class="what-we-do_section-title">Physical and Fitness Assessment</h2>
                     <p>
-                        We will perform physical assessment and <strong>BASIC FITNESS
-                            TEST</strong> done by our fitness professional. One month
-                        after you will be able to:
+                        Our fitness professionals will perform physical
+                        assessment and basic fitness test. One month after you 
+                        will be able to:
                     </p>
                     <ul>
                         <li>Feel better.</li>

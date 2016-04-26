@@ -251,57 +251,68 @@ h2, h3 { font-weight: bold }
         padding-right: $column-gutter;
     }
 
-    h3 { color: white }
+    h3 { 
+        color: white;
+        
+        &.thanks { color: $primary-color }
+    }
 
     form {
         padding: 0;
-
-        .half {
-            @extend .columns;
-            @extend .medium-6;
-
-            @media #{$medium-up} { 
-                &:first-of-type {
-                    padding-right: 5px;
-                }
-
-                &:last-of-type {
-                    padding-left: 5px;
-                }
-            }
-        }
 
         span { 
             color: white;
             font-style: italic
         }
 
-        button { 
-            margin: 1rem 0;
-            @media #{$large-up} { margin-bottom: 0; }
-        }
+        button { margin: 1rem 0 }
 
         label { color: white }
 
-        input:not([type="radio"]) { height: 2rem }
+        input:not([type="radio"]), select { 
+            height: 2rem;
+            padding: 0.2rem 0.4rem;
+        }
 
         textarea { min-height: 8rem }
     }
+}
 
-    .form_description {
-        //@extend .columns;
-        //@extend .large-4;
-        padding: 0;
-        margin-top: $column-gutter / 2;
-        color: white;
+.email-field, .phone-field, .area-field, .time-field {
+    @extend .columns;
+    @extend .medium-6;
+}
 
-        @media #{$large-up}  { 
-            //padding-left: $column-gutter; 
-            margin-top: $column-gutter;
-        }
-
-        h3 { color: white; }
+@media #{$medium-up} {
+    .email-field, .area-field {
+        padding-right: 5px
     }
+    .phone-field, .time-field {
+        padding-left: 5px;
+    }
+}
+
+// Node added to DOM by js
+.kids-age-append {
+    @extend .columns;
+    @extend .small-4;
+    @extend .medium-3;
+    
+    padding: 5px;
+}
+
+.kids-age-placeholder.row { margin: 0 -5px }
+
+.kids-age-append+.kids-age-append:last-child { float: left  }
+
+.form_description {
+    padding: 0;
+    margin-bottom: $column-gutter / 2;
+    color: white;
+
+    @media #{$large-up}  { margin-bottom: $column-gutter; }
+
+    h3 { color: white; }
 }
 
 .g-recaptcha { margin-top: $column-gutter / 2 }

@@ -3,6 +3,10 @@
 </div><!--/ End .row from /includes/header.php -->
 
 <footer class="footer">
+    <?php
+    //include 'test.php'; 
+    //echo $test;
+    ?>
 
     <section id="contact" class="footer_contact">
 
@@ -15,78 +19,7 @@
             </div>
 
             <section class="contact_form">
-
-                <form action="?" id="contact-form" data-abide method="POST">
-
-                    <div class="name-field">
-                        <label>Your name <small>required</small></label>
-                        <input type="text" id="name" required pattern="[a-zA-Z]+">
-                        <small class="error">Name is required. Please use only latin letters.</small>
-                    </div>
-
-                    <div class="email-field">
-                        <label>Email <small>required</small></label>
-                        <input id="email" type="email" required>
-                        <small class="error">An email address is required.</small>
-                    </div>
-
-                    <div class="category-radio">
-                        <label>Choose Your Category<br></label>
-                        <input type="radio" name="category" value="Couple" id="categoryCouple"><label for="categoryCouple">Couple</label>
-                        <input type="radio" name="category" value="Family up to 5" id="categoryFamily"><label for="categoryFamily">Family up to 5</label>
-                        <input type="radio" name="category" value="Family 5+" id="categoryFamilyLarge"><label for="categoryFamilyLarge">Family 5+</label>
-                    </div>
-
-                    <div class="phone-field">
-                        <label>Phone</label>
-                        <input id="phone" type="text">
-                    </div>
-
-                    <div class="area-field">
-                        <label>Area you live</label>
-                        <input id="area" type="text">
-                    </div>
-
-                    <div class="time-field">
-                        <label>Time of Apppointment</label>
-                        <input type="text" id="dpt">
-                    </div>
-
-                    <div class="kids row">
-                        <div class="half">
-                            <label>How Many Kids</label>
-                            <input id="kids-number" type="text">
-                        </div>
-                        <div class="half">
-                            <label>Kids Age</label>
-                            <input id="kids-age" type="text">
-                        </div>
-                    </div>
-
-                    <div class="customer-source">
-                        <label>How did you hear about Big Triumph?
-                            <select id="customer-source">
-                                <option value="" disabled selected>Select your option</option>
-                                <option value="Facebook">Facebook</option>
-                                <option value="Instagram">Instagram</option>
-                                <option value="Website">Website</option>
-                                <option value="Friend">Friend</option>
-                                <option value="LinkedIn">Linkedln</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </label>
-                    </div>
-
-                    <div class="message-field">
-                        <label>Your Message</label>
-                        <textarea id="message"></textarea>
-                    </div>
-
-                    <span>Remember, we would like to meet all family members</span><br>
-                    <div class="g-recaptcha" data-sitekey="6Le0RxATAAAAAFqG1k6PzTyjaF4rA-W7h0e-TgUJ"></div>
-                    <input id="submit-button" type="submit" value="Submit">
-                </form>
-
+                <div class="message-placeholder"></div>
                 <div class="form_description">
                     <h3>We Will:</h3>
                     <ul>
@@ -97,6 +30,100 @@
                     <span>Open your door as we are on our way to you…</span>
                 </div>
 
+                <form action="?" id="contact-form" data-abide method="POST">
+
+                    <div class="name-field">
+                        <label>Your name
+                            <input type="text" id="name" required pattern="[a-zA-Z]+">
+                            <small class="error">Please enter your name</small>
+                        </label>
+                    </div>
+
+                    <div class="row">
+                        <div class="email-field">
+                            <label>Email
+                                <input id="email" type="email" required>
+                                <small class="error">Please enter your email</small>
+                            </label>
+                        </div>
+
+                        <div class="phone-field">
+                            <label>Phone
+                                <input id="phone" type="text" required>
+                                <small class="error">Please enter phone number</small>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="area-field">
+                            <label>Area You Live in
+                                <input id="area" type="text" required>
+                                <small class="error">Please enter the are you live in</small>
+                            </label>
+                        </div>
+
+                        <div class="time-field">
+                            <label>Preferred Time of Appointment
+                                <input type="text" id="dpt" required>
+                                <small class="error">Please enter preferred time of appointment</small>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="category-radio">
+                        <label>Choose Your Category<br>
+                            <input type="radio" name="category" value="Couple" id="categoryCouple" required><label for="categoryCouple">Couple</label>
+                            <input type="radio" name="category" value="Family up to 5" id="categoryFamily" required><label for="categoryFamily">Family up to 5</label>
+                            <input type="radio" name="category" value="Big family" id="categoryFamilyLarge" required><label for="categoryFamilyLarge">Family 5+</label>
+                            <small class="error">Please select your category</small>
+                        </label>
+                    </div>
+
+                    <div class="kids">
+                        <label>How Many Kids</label>
+                        <select id="kids-number">
+                            <option value="dfdsfas" disabled selected>Select number of kids</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option class="kids-number-large" value="4">4</option>
+                            <option class="kids-number-large" value="5">5</option>
+                            <option class="kids-number-large" value="6">6</option>
+                            <option class="kids-number-large" value="7">7</option>
+                            <option class="kids-number-large" value="8">8</option>
+                            <option class="kids-number-large" value="9">9</option>
+                        </select>
+                        <div class="kids-age-placeholder row"></div>
+                    </div>
+
+
+                    <div class="message-field">
+                        <label>Your Message
+                            <textarea id="message" required></textarea>
+                            <small class="error">Please enter details</small>
+                        </label>
+                    </div>
+
+                    <div class="customer-source">
+                        <label>How did You Hear About Big Triumph?
+                            <select id="customer-source" required>
+                                <option value="" disabled selected>Select your option</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="Website">Website</option>
+                                <option value="Friend">Friend</option>
+                                <option value="LinkedIn">Linkedln</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <small class="error">Please tell us how did you hear of us</small>
+                        </label>
+                    </div>
+
+                    <span>Remember, we would like to meet all family members</span><br>
+                    <div class="g-recaptcha" data-sitekey="6Le0RxATAAAAAFqG1k6PzTyjaF4rA-W7h0e-TgUJ"></div>
+                    <button id="submit-button" type="submit">Submit</button>
+                </form>
             </section>
 
             <section class="contact_details">
