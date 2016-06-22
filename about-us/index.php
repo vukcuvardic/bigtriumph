@@ -45,10 +45,11 @@ include('../includes/header.php');
         <h2>Our Team</h2>
 
         <section class="our-team_member">
-            <div class="member_role">
-                <strong>Founder</strong><br>
-                (Team coordinator)
-            </div>
+            <h4 class="member_role">
+                <strong>Founder</strong>
+                <br>
+                <span>(Team coordinator)</span>
+            </h4>
 
             <div class="member_details">
 
@@ -62,15 +63,20 @@ include('../includes/header.php');
                     </div>
                     <div class="member_bio">
                         <h3>Marina Krizanovic</h3>
-                        <p>
-                            <strong>Master B.Sc. in Food Technology</strong><br>
-                            (Major Carbohydrate Food)
-                        </p>
-                        <p>
-                            <strong>FISAF</strong> (Federation of International Sports Aerobics and Fitness) 
-                            Certified Instructor, Personal Trainer and former National Champion of Serbia in 
-                            Sports Aerobics (2004/5/6)
-                        </p>
+                        <ul class="member_highlighs">
+                            <li>
+                                <strong>Master B.Sc. in Food Technology</strong>
+                                <br>
+                                (Major Carbohydrate Food)
+                            </li>
+                            <li>
+                                <strong>Certified Personal Trainer – FISAF</strong>
+                                ( Federation of International Sports Aerobics and Fitness )
+                            </li>
+                            <li>
+                                Former National Champion of Serbia in Sports Aerobics (2004/5/6)
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -89,9 +95,9 @@ include('../includes/header.php');
         </section><!-- /.member -->
 
         <section class="our-team_member">
-            <div class="member_role">
+            <h4 class="member_role">
                 <strong>Dietitian</strong>
-            </div>
+            </h4>
 
             <div class="member_details">
 
@@ -105,9 +111,11 @@ include('../includes/header.php');
                     </div>
                     <div class="member_bio">
                         <h3>Rouba Kahil</h3>
-                        <p>
-                            <strong>Bachelor’s degree in Nutrition and Food Science</strong>
-                        </p>
+                        <ul class="member_highlighs">
+                            <li>
+                                <strong>Bachelor degree in Nutrition and Food Science</strong>
+                            </li>
+                        </ul>                        
                     </div>
                 </div>
 
@@ -129,9 +137,9 @@ include('../includes/header.php');
         </section><!-- /.member -->
 
         <section class="our-team_member">
-            <div class="member_role">
-                <strong>Personal Trainer</strong>
-            </div>
+            <h4 class="member_role">
+                <strong>Senior Sport Coach</strong>
+            </h4>
 
             <div class="member_details">
 
@@ -145,15 +153,20 @@ include('../includes/header.php');
                     </div>
                     <div class="member_bio">
                         <h3>Branko Brescanski</h3>
-                        <p>
-                            Senior Sport Coach for Martial Arts Real 
-                            Aikido and expert for Close Combat/Close 
-                            protection and Self Defense.
-                        </p>
-                        <p>
-                            Founder of International Federation for Self Defense
-                            Real Aikido System.
-                        </p>
+                        <ul class="member_highlighs">
+                            <li>
+                                <strong>Senior Sport Coach</strong> – Martial Arts Real Aikido
+                            </li>
+                            <li>
+                                <strong>6. Dan Black Belt</strong>
+                            </li>
+                            <li>
+                                Expert for Close Combat/Close Protection and Self Defense
+                            </li>
+                            <li>
+                                Founder of International Federation for Self Defense Real Aikido System.
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -166,6 +179,63 @@ include('../includes/header.php');
                     </p>
                     <p>
                         Now I found the way: BIG TRIUMPH concept!
+                    </p>
+                </div>
+
+            </div>
+
+        </section><!-- /.member -->
+
+        <section class="our-team_member">
+            <h4 class="member_role">
+                <strong>Personal Trainer</strong>
+            </h4>
+
+            <div class="member_details">
+
+                <div class="row">
+                    <div class="member_image">
+                        <img data-interchange="
+                             [../dist/images/our-team/ivana-zdravkovic-305.jpg, (small)], 
+                             [../dist/images/our-team/ivana-zdravkovic-305.jpg, (medium)], 
+                             [../dist/images/our-team/ivana-zdravkovic-225.jpg, (large)]"
+                             alt="Ivana Zdravković" />
+                    </div>
+                    <div class="member_bio">
+                        <h3>Ivana Zdravkovic</h3>
+                        <ul class="member_highlighs">
+                            <li>
+                            <strong>Master Degree - Physical Education Teacher and Sport Trainer</strong>
+                            </li>
+                            <li>
+                                <strong>Master Degree - ACIMSI - Sports medicine and physiotherapy</strong>
+                            </li>
+                            <li>
+                                <strong>Personal Trainer certification – Level 3, UAE REPs</strong>
+                            </li>
+                            <li>
+                                <strong>Lifeguard license – US Aquatics</strong>
+                            </li>
+                            <li>
+                                <strong>First Aid/CPR certification - UAE</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="member_desc">
+                    <p>
+                        With my work experience as a trainer, I can say healthy lifestyle is pre-condition for longer and
+                        happier life. Starting early, in early childhood, and creating healthy habits is a first and most
+                        valuable step which will eventually lead to healthier life. Be inspired and inspire others. Let your
+                        family be healthy family. Eating healthy and doing physical training smartly, you are on the
+                        secured pathway towards your goals. Big Triumph is perfect place for you. With you we are
+                        complete.
+                    </p>
+                    <p>
+                        Don’t compare yourself with others.
+                        <br>
+                        Never give up!
                     </p>
                 </div>
 

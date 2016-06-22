@@ -24,7 +24,7 @@ include('../includes/header.php');
                 I saw results instantly and every day gets better and better!
             </p>
 
-            <h3>Female, (30) Z.G. – UAE</h3>
+            <h4>Female, (30) Z.G. – UAE</h4>
         </section>
 
         <section class="testimonial">
@@ -57,7 +57,7 @@ include('../includes/header.php');
                 anyone could do it too…….and….I wish you can see my pictures :)
             </p>
 
-            <h3>Female  (20) B.G. – UAE</h3>
+            <h4>Female  (20) B.G. – UAE</h4>
         </section>
 
         <section class="testimonial">
@@ -69,7 +69,7 @@ include('../includes/header.php');
                 boosted my confidence and inspiration.
             </p>
 
-            <h3>Female (45) A.H. – UAE</h3>
+            <h4>Female (45) A.H. – UAE</h4>
         </section>
         <section class="testimonial">
             <p>
@@ -107,7 +107,7 @@ include('../includes/header.php');
                 their concept. I’m glad to be a part of it!
             </p>
 
-            <h3>Female (59) M.K. – USA</h3>
+            <h4>Female (59) M.K. – USA</h4>
         </section>
         <section class="testimonial">
             <p>
@@ -124,7 +124,7 @@ include('../includes/header.php');
                 Triumph.
             </p>
 
-            <h3>Female (33),   S.G. - UAE</h3>
+            <h4>Female (33),   S.G. - UAE</h4>
         </section>
 
     </section>

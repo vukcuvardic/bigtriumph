@@ -355,9 +355,13 @@ h2, h3 { font-weight: bold }
 */
 
 .our-vision h2,
-.our-team h2 { margin-top: 0 }
+.our-team h2 {
+    margin-top: 0;
+}
 
 // Our Team
+
+.our-team h2 { margin-bottom: $column-gutter; }
 
 .our-team_member {
     @extend .row;
@@ -382,7 +386,7 @@ h2, h3 { font-weight: bold }
 
     img { 
         border: $border-light;
-        margin-bottom: $column-gutter / 2;
+        margin-bottom: $column-gutter / 4;
 
         @media #{medium-up} { margin-bottom: 0; }
     }
@@ -392,13 +396,28 @@ h2, h3 { font-weight: bold }
     @extend .columns;
     @extend .medium-8;
 
-    p:last-of-type { margin-bottom: 0 }
+    h3 {
+        margin-top: 0;
+        margin-bottom: $column-gutter / 4;
+    }
+    
+    p:last-of-type { margin-bottom: 0; }
 
     @media #{medium-up} { padding: 0; }
 }    
 
+.member_highlighs {
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 0;
+    
+    li { font-size: 0.9rem; }
+    
+    li:not(:last-of-type) { margin-bottom: $column-gutter / 4; }
+}
+
 .member_desc {
-    margin-top: $column-gutter / 2;
+    margin-top: $column-gutter / 4;
     font-style: italic;
     text-align: justify;    
     p:last-of-type { margin-bottom: 0 }
@@ -411,7 +430,15 @@ h2, h3 { font-weight: bold }
     @extend .large-3;
 
     margin-bottom: $column-gutter / 2;
+    margin-top: 0;
     padding-left: 0;
+    
+    span,
+    strong { line-height: 1; }
+    
+    span { font-size: 0.9em; }
+    
+    strong { font-size: 1.2em; }
 }
 
 
@@ -860,4 +887,8 @@ h2, h3 { font-weight: bold }
 //
 */
 
-.testimonial { margin-bottom: $column-gutter * 2; }
+.testimonial {
+    @extend .our-team_member;
+    
+    h4 { font-weight: bold; }
+}
