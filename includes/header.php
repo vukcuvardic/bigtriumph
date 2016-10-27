@@ -86,7 +86,7 @@ function navClass($item) {
             <div class="row">
 
                 <div class="header_logo">
-                    <a href="<?php echo $ROOT; ?>">
+                    <a href="<?php echo $ROOT; ?>/">
                         <img src="<?php echo $ROOT; ?>/dist/images/logo/big-triumph_logo.svg" alt="Big Triumph Logo" /> 
                     </a>
                 </div>

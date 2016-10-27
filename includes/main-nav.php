@@ -1,6 +1,6 @@
 <ul>
     <li class="<?php navClass('home'); ?>">
-        <a href="<?php echo $ROOT; ?>">Home</a>
+        <a href="<?php echo $ROOT; ?>/">Home</a>
     </li>
     <li class="<?php navClass('what-we-do'); ?>">
         <a href="<?php echo $ROOT; ?>/what-we-do">What We Do</a>

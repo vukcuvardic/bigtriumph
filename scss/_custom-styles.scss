@@ -59,11 +59,15 @@
     ul { 
         @extend .inline-list;
         margin-bottom: 0;
+        display: inline-block;
     }
 
-    @media #{$large-up} { float: right; }
+    @media #{$medium-up} {
+        text-align: center;
+        width: 100%;
+    }
 
-    @media #{$medium-only} { 
+    @media #{$medium-only} {
         float: none;
         margin-top: $column-gutter;
     }

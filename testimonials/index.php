@@ -126,6 +126,88 @@ include('../includes/header.php');
 
             <h4>Female (33),   S.G. - UAE</h4>
         </section>
+        <section class="testimonial">
+            <p>
+                I would like to start off by saying, the level of professionalism and expertise
+                was incredible and made my overall experience beyond pleasant. When I first joined Big Triumph,
+                I was overweight and I knew I wasn't in the best shape. I was looking for a change and I got just that with TBT.
+                I got a full wellness assessment starting off which included an in-depth session on my physical
+                activities and eating habits. Based on the feedback I provided I received a full diet plan to
+                go with that a few days later. A plan was developed to gradually transform my fitness level and
+                overall health. Although it was strict, there was still a little flexibility which made it easier
+                to follow specially that the meals were readily available at most restaurants, which makes it easier
+                for people with a busy schedule.
+            </p>
+            <p>
+                Today, I feel lighter, more energetic and happier.
+            </p>
+
+            <h4>Male (28), KMS – UAE</h4>
+        </section>
+        <section class="testimonial">
+            <p>
+                I am in love with Big Triumph’s lifestyle program. I have been training
+                with Marina for over 4 years now and have been loving it.
+                However, once I started the total healthy lifestyle program I did notice
+                the centimeters dropping off in all those stubborn areas.
+                It is such an easy program to follow and it’s now become part of my routine.
+                It has been such an amazing experience that my kids have also joined
+                me both in the physical and dietary aspect.
+            </p>
+            <p>
+                Thanks Marina!
+            </p>
+
+            <h4>Female (40), S.H. - UAE</h4>
+        </section>
+        <section class="testimonial">
+            <p>
+                At first I wasn't sure what to expect, I’ve been through a few fitness
+                programs but never one that does its job as thoroughly as Big Triumph,
+                I was a person that as soon as someone says the words workout or diet
+                I would grab the nearest chocolate bar and put on my headphones, but
+                –and I'm really trying to avoid sounding cliché- I really do LOVE
+                working out now! I thought this was going to be like all my other
+                attempts at trying to be fit and hopefully lose weight, but this really
+                isn't, there is no useless flair there is only facts and as soon as I
+                heard the determination in Marina’s voice I knew I was going to lose
+                weight and enter a healthier stage in my life. The lopall its energy
+                on really changing you for the better, after all 20% is working out and
+                80% is the sustenance you consume. Big Triumph offers their own
+                handpicked recipes that keep you full and nourished, they have a wide
+                range of foods and have always been open to helping a picky eater such
+                as myself. I had a hard time accepting their food choices because I
+                was so used to having large amounts of sweets, but after a few days
+                of toughing it out my body started getting used to the healthier foods
+                they were offering, now I actually cannot really stomach any fast food.
+                I never thought I would love working out as much as I do now,
+                I actually get angry whenever I have to miss a session and I always make
+                sure that if for any reason I have to miss a session I can reschedule
+                to another day.
+            </p>
+            <p>
+                Big Triumph has thoroughly changed my lifestyle and I can happily say that it is in the best way possible.
+            </p>
+
+            <h4>Female (20), M.G. - UAE</h4>
+        </section>
+        <section class="testimonial">
+            <p>
+                Super happy to work with Marina and Branko.
+            </p>
+            <p>
+                My mother and I have manage to put a lot of weight off without
+                any frustration and difficulty with the advice of Marina.
+            </p>
+            <p>
+                Branko is a very professional instructor applying street wise combat
+                defense technics with ease et effectiveness. Excellent instructor to be
+                recommended to anyone interested by self-defense. Always impatient to
+                attend the following on training session!!!
+            </p>
+
+            <h4>Female (45), S.Z. - FRA</h4>
+        </section>
 
     </section>
 
